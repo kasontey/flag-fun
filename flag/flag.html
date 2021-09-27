@@ -1,0 +1,120 @@
+<!--This project replicates the True South Flag as part of a bet against my friends that I could build a flag. I successfully built the flag.
+-->
+
+
+<style>
+	.blue{
+	background-color:#012C96;
+	}
+    
+    .flag-background{
+    width:300px;
+	height:180px;
+    border:5px solid white;
+    position: absolute;
+    z-index:1;
+    }
+
+    .triangle {
+    width: 180px;
+    height: 180px;
+    top: 5px;
+    left: 60px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0 , 100% 100%);
+    background:#FDC701;
+    }
+
+    .star-pos1 {
+        position:relative;
+        top: -160px;
+        left: 25px;
+        z-index:3;
+    }
+
+    .star-pos2 {
+        position:relative;
+        top: -140px;
+        left: 65px;
+        z-index:3;
+    }
+
+    .star-pos3 {
+        position:relative;
+        top: -120px;
+        left: 105px;
+        z-index:3;
+    }
+
+    .star-pos4 {
+        position:relative;
+        top: -100px;
+        left: 140px;
+        z-index:3;
+    }
+
+    #star5 {
+ margin: 0;
+ position: relative;
+ display: block;
+ width: 0px;
+ height: 0px;
+ border-right: 25px solid transparent;
+ border-bottom: 18px solid white;
+ border-left: 25px solid transparent;
+ -moz-transform: rotate(35deg);
+ -webkit-transform: rotate(35deg);
+ -ms-transform: rotate(35deg);
+ -o-transform: rotate(35deg);
+}
+#star5:before {
+ border-bottom: 20px solid white;
+ border-left: 8px solid transparent;
+ border-right: 8px solid transparent;
+ position: absolute;
+ height: 0;
+ width: 0;
+ top: -11px;
+ left: -16px;
+ display: block;
+ content:"";
+ -webkit-transform: rotate(-35deg);
+ -moz-transform: rotate(-35deg);
+ -ms-transform: rotate(-35deg);
+ -o-transform: rotate(-35deg);
+}
+#star5:after {
+ position: absolute;
+ display: block;
+ top: 3px;
+ left: -26px;
+ width: 0px;
+ height: 0px;
+ border-right: 25px solid transparent;
+ border-bottom: 18px solid white;
+ border-left: 25px solid transparent;
+ -webkit-transform: rotate(-70deg);
+ -moz-transform: rotate(-70deg);
+ -ms-transform: rotate(-70deg);
+ -o-transform: rotate(-70deg); content:"";
+}
+    
+</style>
+
+<h1> Bosnia and Herzegovina</h1>
+
+<body>
+
+  <div id="flagbody-blue" class="blue flag-background">
+  </div>
+
+  <div id="flagbody-triangle" class="triangle">
+  </div>
+
+  <div id="star5" class="star-pos1"></div>
+  <div id="star5" class="star-pos2"></div>
+  <div id="star5" class="star-pos3"></div>
+  <div id="star5" class="star-pos4"></div>
+</body>
